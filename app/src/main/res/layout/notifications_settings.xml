@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/new_actionbar_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/newactionbar"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/on_new_user_followed_lay"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.fishbuddy.customfonts.CustomRegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="start"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="18dp"
+                android:text="New user followed"
+                android:layout_weight="0.5"
+                android:textColor="@color/post_text_color" />
+
+            <Switch
+                android:id="@+id/switch_on_new_user_followed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="end"
+                android:layout_marginRight="18dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.35dp"
+        android:background="@color/form_text_color" />
+
+    <LinearLayout
+        android:id="@+id/on_another_user_commented_on_your_post_lay"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.fishbuddy.customfonts.CustomRegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="start"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="18dp"
+                android:text="User commented on your post"
+                android:layout_weight="0.5"
+                android:textColor="@color/post_text_color" />
+
+            <Switch
+                android:id="@+id/switch_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="end"
+                android:layout_marginRight="18dp"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.35dp"
+        android:background="@color/form_text_color" />
+
+
+    <LinearLayout
+        android:id="@+id/on_new_post_by_user_you_following_lay"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.fishbuddy.customfonts.CustomRegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="start"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="18dp"
+                android:text="New post by user you following"
+                android:layout_weight="0.5"
+                android:textColor="@color/post_text_color" />
+
+            <Switch
+                android:id="@+id/switch_newposts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="end"
+                android:layout_marginRight="18dp"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.35dp"
+        android:background="@color/form_text_color" />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/on_new_post_by_user_you_followers_lay"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.fishbuddy.customfonts.CustomRegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="start"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="18dp"
+                android:text="New post by user your follower"
+                android:layout_weight="0.5"
+                android:textColor="@color/post_text_color" />
+
+            <Switch
+                android:id="@+id/switch_newposts_follower"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="end"
+                android:layout_marginRight="18dp"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.35dp"
+        android:background="@color/form_text_color" />
+
+
+    <LinearLayout
+        android:id="@+id/on_another_user_liked_your_post_lay"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.fishbuddy.customfonts.CustomRegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="start"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="18dp"
+                android:text="User liked your post"
+                android:layout_weight="0.5"
+                android:textColor="@color/post_text_color" />
+
+            <Switch
+                android:id="@+id/switch_likes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="end"
+                android:layout_marginRight="18dp"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.35dp"
+        android:background="@color/form_text_color" />
+
+
+
+
+    <com.fishbuddy.customfonts.CustomButton
+        android:id="@+id/update_settings_btn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:textColor="@color/white"
+        android:text="Update Settings"
+        android:textSize="16sp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/signin_btn_bg"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"/>
+
+
+
+</LinearLayout>

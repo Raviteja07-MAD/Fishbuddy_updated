@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "876537306005",
+    "firebase_url": "https://fishbuddy.firebaseio.com",
+    "project_id": "fishbuddy",
+    "storage_bucket": "fishbuddy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876537306005:android:a3f2e1217f706753afb49c",
+        "android_client_info": {
+          "package_name": "com.fishbuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "876537306005-8r4fadpmkrfiuq9bjencl03v392csgj5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fishbuddy",
+            "certificate_hash": "66e67218c332e0ec153933d33522ae9d30b985d9"
+          }
+        },
+        {
+          "client_id": "876537306005-kmmco0v3jjfmqpg9ru0upa891d6pa6og.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0AHdy_IxvK6nJWA89ERN124SuyQwfocQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "876537306005-kmmco0v3jjfmqpg9ru0upa891d6pa6og.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

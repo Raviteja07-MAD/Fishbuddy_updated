@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                android:elevation="0dp"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="15dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!--@drawable/popup_bg-->
+                    <LinearLayout
+                        android:id="@+id/header_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/info_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Logout Confirmation"
+                            android:textSize="18dp"
+                            android:padding="10dp"
+                            android:gravity="center"
+                            android:visibility="invisible"
+                            android:layout_weight="0.15"/>
+
+                        <LinearLayout
+                            android:id="@+id/cancel_lay"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.85"
+                            android:layout_gravity="center"
+                            android:gravity="right|center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/canclimg"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp"
+                                android:src="@drawable/close_button"
+                                android:layout_gravity="center"/>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <com.fishbuddy.customfonts.CustomRegularTextView
+                        android:id="@+id/logout_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/post_text_color"
+                        android:text="Do you want to Logout?"
+                        android:textSize="18dp"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="15dp"/>
+
+                    <com.fishbuddy.customfonts.CustomRegularTextView
+                        android:id="@+id/scan_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/post_text_color"
+                        android:text="Do you want to scan another product?"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="15dp"/>
+
+                    <com.fishbuddy.customfonts.CustomRegularTextView
+                        android:id="@+id/exit_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/post_text_color"
+                        android:text="Do you want to Exit?"
+                        android:textSize="18dp"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="15dp"
+                        android:visibility="gone"/>
+
+
+                    <!-- <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="38dp"
+                         android:layout_marginTop="35dp"
+                         android:layout_marginBottom="25dp"
+                         android:layout_gravity="center"
+                         android:gravity="center"
+                         android:orientation="horizontal"
+                         android:layout_weight="1">
+
+                         <Button
+                             android:id="@+id/ok_btn"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:layout_marginRight="15dp"
+                             android:paddingLeft="15dp"
+                             android:paddingRight="15dp"
+                             android:text="Yes"
+                             android:textColor="@color/white"
+                             android:textAllCaps="false"
+                             android:background="@drawable/button_bg"
+                             android:textSize="14dp"
+                             android:layout_weight="0.5"
+                            />
+
+                         <Button
+                             android:id="@+id/cancel_btn"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:layout_marginLeft="15dp"
+                             android:text="No"
+                             android:paddingLeft="15dp"
+                             android:paddingRight="15dp"
+                             android:textAllCaps="false"
+                             android:background="@drawable/button_bg_yellow"
+                             android:textSize="14dp"
+                             android:layout_weight="0.5"
+                             android:textColor="@color/white"/>
+
+                     </LinearLayout>-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+                        <com.fishbuddy.customfonts.CustomButton
+                            android:id="@+id/ok_btn"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:padding="6dp"
+                            android:text="Yes"
+                            android:textAllCaps="false"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/signin_btn_bg"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp" />
+
+                        <com.fishbuddy.customfonts.CustomButton
+                            android:id="@+id/cancel_btn"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:padding="6dp"
+                            android:textSize="14sp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:text="No"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:background="@drawable/black_btn_bg" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

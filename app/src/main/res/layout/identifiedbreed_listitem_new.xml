@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="@color/yashbg">
+
+    <!-- android:id="@+id/fishingspots_lay"-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           >
+
+
+            <View
+                android:id="@+id/view_color"
+                android:layout_width="12dp"
+                android:layout_height="match_parent"
+                android:background="@color/orange"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:id="@+id/fishingspots_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <com.fishbuddy.circularimageview.CircularImageView
+                    android:id="@+id/lake_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/post_image"
+                    android:layout_gravity="center_vertical"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <com.fishbuddy.customfonts.CustomBoldTextView
+                        android:id="@+id/lakename_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:textColor="@color/orange"
+                        android:text="@string/lakename"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp" />
+
+                    <com.fishbuddy.customfonts.CustomRegularTextView
+                        android:id="@+id/lakelocation_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:textColor="@color/form_text_color"
+                        android:text="@string/lochbar"
+                        android:textSize="10sp"/>
+
+
+                    <com.fishbuddy.customfonts.CustomRegularTextView
+                        android:id="@+id/lakedetails_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:textColor="@color/lite_color_text"
+                        android:text="@string/lakedetails"
+                        android:textSize="12sp"
+                        android:ellipsize="end"
+                        android:lines="3"
+                        android:layout_marginTop="5dp"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/form_text_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="start"
+                        android:layout_weight="0.4"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <com.fishbuddy.customfonts.CustomRegularTextView
+                            android:id="@+id/area_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/area"
+                            android:textColor="@color/form_text_color"
+                            android:textSize="10dp" />
+
+                        <com.fishbuddy.customfonts.CustomRegularTextView
+                            android:id="@+id/area_count_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="1dp"
+                            android:text="@string/totalarea"
+                            android:textColor="@color/post_text_color"
+                            android:textSize="10dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:layout_marginLeft="5dp">
+
+                        <com.fishbuddy.customfonts.CustomRegularTextView
+                            android:id="@+id/percentagevalue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/orange"
+                            android:text="@string/post"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:id="@+id/maxdepth_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/maxdepth"
+                            android:layout_gravity="center"
+                            android:textColor="@color/form_text_color"
+                            android:textSize="10dp"
+                            android:visibility="gone"/>
+
+                        <com.fishbuddy.customfonts.CustomRegularTextView
+                            android:id="@+id/maxdepth_count_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/maxdepthft"
+                            android:layout_gravity="center"
+                            android:textColor="@color/post_text_color"
+                            android:layout_marginLeft="1dp"
+                            android:textSize="10dp"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/directions_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/directions"
+                            android:layout_gravity="center" />
+
+                        <com.fishbuddy.customfonts.CustomRegularTextView
+                            android:id="@+id/directions_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/orange"
+                            android:text="@string/post"
+                            android:textSize="16sp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

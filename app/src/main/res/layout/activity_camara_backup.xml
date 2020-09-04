@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/post_text_color"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:id="@+id/top_lay"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/black">
+        <!--@string/largemouthbass-->
+        <com.fishbuddy.customfonts.CustomRegularTextView
+            android:id="@+id/fishname_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Capture Fish"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"/>
+        <ImageView
+            android:id="@+id/fish_info_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/information"
+            android:tint="@color/lite_color_text"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="15dp"/>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/camera_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+
+
+        <ImageView
+            android:id="@+id/camera_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="fitXY"
+            android:visibility="visible"
+            android:layout_weight="0.5"
+            android:adjustViewBounds="true"
+            android:layout_marginRight="2.5dp"
+            android:background="@color/black"
+            android:rotation="90"
+            />
+
+        <!-- <ImageView
+             android:id="@+id/camera_image_view"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:rotation="90"/>-->
+
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/bottom_lay"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <com.fishbuddy.customfonts.CustomMediumTextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/red"
+            android:text="important!"
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"/>
+
+        <com.fishbuddy.customfonts.CustomRegularTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/lite_color_text"
+            android:text="@string/capture"
+            android:textSize="16sp"
+            android:layout_marginBottom="15dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <!-- <Button
+                 android:id="@+id/capture_image_button"
+                 android:layout_width="150dp"
+                 android:layout_height="wrap_content"
+                 android:text="Capture" />-->
+
+
+
+            <com.fishbuddy.customfonts.CustomButton
+                android:id="@+id/galley_pick_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textColor="@color/white"
+                android:text="Gallery"
+                android:textSize="14sp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/signin_btn_bg"
+                android:textAllCaps="false"
+                android:layout_weight="0.5"/>
+
+            <com.fishbuddy.customfonts.CustomButton
+                android:id="@+id/capture_image_button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textColor="@color/white"
+                android:text="Capture"
+                android:textSize="14sp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/signin_btn_bg"
+                android:textAllCaps="false"
+                android:layout_weight="0.5"/>
+
+            <com.fishbuddy.customfonts.CustomButton
+                android:id="@+id/done_button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textColor="@color/white"
+                android:text="Done"
+                android:textSize="14sp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/signin_btn_bg"
+                android:textAllCaps="false"
+                android:layout_weight="0.5"/>
+
+
+            <!-- <Button
+                 android:id="@+id/done_button"
+                 android:layout_width="150dp"
+                 android:layout_height="wrap_content"
+                 android:text="Done" />-->
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

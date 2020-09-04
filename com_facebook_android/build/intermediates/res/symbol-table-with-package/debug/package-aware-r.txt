@@ -1,0 +1,3 @@
+com.facebook.android
+drawable close
+drawable facebook_icon

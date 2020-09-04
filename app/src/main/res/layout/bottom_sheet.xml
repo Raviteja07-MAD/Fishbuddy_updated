@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/yashbg"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="100dp"
+    android:id="@+id/bottm_sheet_layout"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    >
+    <!--app:layout_behavior="android.support.design.widget.BottomSheetBehavior"-->
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/image_drag_able_lay_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           >
+
+        <ImageView
+            android:id="@+id/image_drag_able"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:rotation="270"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/downarrow"/>
+
+        <LinearLayout
+            android:id="@+id/image_drag_able_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <com.fishbuddy.customfonts.CustomRegularTextView
+                    android:id="@+id/identified_breedname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="Identified Breeds"
+                    android:textColor="@color/lite_color_text"
+                    android:textSize="20dp"
+                    android:visibility="visible" />
+
+                <View
+                    android:id="@+id/identified_breedname_view"
+                    android:layout_width="70dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/orange" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <com.fishbuddy.customfonts.CustomRegularTextView
+                    android:id="@+id/common_breedname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="Common Species"
+                    android:textColor="@color/lite_color_text"
+                    android:textSize="20dp"
+                    android:visibility="visible" />
+
+                <View
+                    android:id="@+id/common_breedname_view"
+                    android:layout_width="70dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/orange" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/identified_recycle_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+
+        <LinearLayout
+            android:id="@+id/nodatafound_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="100dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/splash_logo_new"
+                android:layout_gravity="center"/>
+            <com.fishbuddy.customfonts.CustomRegularTextView
+                android:id="@+id/nodatafound_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/no_posts_found"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="visible"
+                android:textColor="@color/lite_color_text" />
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/shimmer_fishingspots"
+            android:visibility="gone"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/landing_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_marginTop="10dp"
+            android:nestedScrollingEnabled="true"
+            android:visibility="visible">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/common_spices_recycle_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+           >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/common_spices_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_marginTop="10dp"
+            android:nestedScrollingEnabled="true"
+            android:visibility="visible">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

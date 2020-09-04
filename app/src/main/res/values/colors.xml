@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="orange">#D95C16</color>
+    <color name="black">#1D1D26</color>
+    <color name="form_text_color">#A39CA9</color>
+
+    <color name="bluecolor">#03A9F4</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="voilet">#3A5898</color>
+    <color name="red">#EF3F22</color>
+    <color name="bottombg">#EEEEEE</color>
+    <color name="yashbg">#DCDCDC</color>
+    <color name="transblack">#63000000</color>
+    <color name="commentsbg">#F1EFEF</color>
+
+    <color name="post_text_color">#1D1D26</color>
+    <color name="lite_color_text">#555555</color>
+
+
+    <!--<color name="post_text_color">#1D1D26</color>
+    <color name="lite_color_text">#B9B3BD</color>-->
+
+
+    <color name="background">#A5A5A5</color>
+    <color name="transwhite">#80FFFFFF</color>
+
+
+    <color name="darkorenge">#B94300</color>
+
+
+    <color name="trorange">#80D95C16</color>
+    <color name="trhash">#80CCCCCC</color>
+
+    <color name="trgreen">#8033D916</color>
+    <color name="trpink">#80CC16D9</color>
+    <color name="tryellow">#80FFEB3B</color>
+    <color name="trmaroon">#809C27B0</color>
+    <color name="trblue">#802745B0</color>
+
+</resources>

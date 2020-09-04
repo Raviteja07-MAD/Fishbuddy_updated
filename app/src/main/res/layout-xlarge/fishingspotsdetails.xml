@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/landing_listitems_lay"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/new_actionbar_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/newactionbar"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/lake_image"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/post_image"
+                android:scaleType="fitXY"
+                android:layout_marginBottom="5dp"/>
+
+            <com.fishbuddy.customfonts.CustomRegularTextView
+                android:id="@+id/lakedetails_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lakedetails"
+                android:visibility="visible"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:ellipsize="end"
+                android:textColor="@color/lite_color_text"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/maxlength_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maxlength"
+                    android:layout_weight="0.6"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/lite_color_text"
+                    android:textSize="12dp"/>
+
+                <com.fishbuddy.customfonts.CustomRegularTextView
+                    android:id="@+id/maxlengthkm_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/maxlengthkm"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/lite_color_text"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/surface_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/surface"
+                    android:layout_weight="0.6"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/lite_color_text"
+                    android:textSize="12dp"/>
+
+                <com.fishbuddy.customfonts.CustomRegularTextView
+                    android:id="@+id/surfacekm_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/surfacekm"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/lite_color_text"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/averagedepth_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/averagedepth"
+                    android:layout_weight="0.6"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/lite_color_text"
+                    android:textSize="12dp"/>
+
+                <com.fishbuddy.customfonts.CustomRegularTextView
+                    android:id="@+id/avegedpthmtrs_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/avegedpthmtrs"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/lite_color_text"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/maxdepth_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maxdepth"
+                    android:layout_weight="0.6"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/lite_color_text"
+                    android:textSize="12dp"/>
+
+                <com.fishbuddy.customfonts.CustomRegularTextView
+                    android:id="@+id/maxdepthft_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/maxdepthft"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/lite_color_text"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/watervl_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/watervl"
+                    android:layout_weight="0.6"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/lite_color_text"
+                    android:textSize="12dp"/>
+
+                <com.fishbuddy.customfonts.CustomRegularTextView
+                    android:id="@+id/watervlunits_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/watervlunits"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/lite_color_text"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/surfaceelvtn_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/surfaceelvtn"
+                    android:layout_weight="0.6"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/lite_color_text"
+                    android:textSize="12dp"/>
+
+                <com.fishbuddy.customfonts.CustomRegularTextView
+                    android:id="@+id/surfaceelvtnunits_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/surfaceelvtnunits"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/lite_color_text"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/locate_lake_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:background="@drawable/signin_btn_bg"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/locate_the_lake_icon"/>
+
+                <com.fishbuddy.customfonts.CustomRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:text="@string/locatethelake"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/new_actionbar_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/newactionbar"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/sign_in_layout">
+
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center">
+
+
+                        <ImageView
+                            android:id="@+id/profile_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/man"/>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:scaleType="fitXY"
+                            android:layout_gravity="right|bottom"
+                            android:adjustViewBounds="true"
+                            android:tint="@color/orange"
+                            android:layout_margin="6dp"
+                            android:src="@drawable/edit_icon"/>
+
+                    </FrameLayout>
+
+
+
+                    <com.fishbuddy.customfonts.CustomEditText
+                        android:id="@+id/edit_profile_frstname_edtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:hint="@string/frst_name"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:textColor="@color/post_text_color"
+                        android:textColorHint="@color/lite_color_text"
+                        android:textSize="16sp" />
+
+                    <com.fishbuddy.customfonts.CustomEditText
+                        android:id="@+id/edit_profile_lastname_edtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/last_name"
+                        android:inputType="text"
+                        android:textSize="16sp"
+                        android:textColorHint="@color/lite_color_text"
+                        android:textColor="@color/post_text_color"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"/>
+
+                    <com.fishbuddy.customfonts.CustomEditText
+                        android:id="@+id/edit_profile_email_edtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:textSize="16sp"
+                        android:textColorHint="@color/lite_color_text"
+                        android:textColor="@color/post_text_color"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"/>
+
+                    <com.fishbuddy.customfonts.CustomEditText
+                        android:id="@+id/edit_profile_phnnumber_edtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/phnnumber"
+                        android:inputType="number"
+                        android:textSize="16sp"
+                        android:textColorHint="@color/lite_color_text"
+                        android:textColor="@color/post_text_color"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"/>
+
+                    <com.fishbuddy.customfonts.CustomEditText
+                        android:id="@+id/edit_profile_adress_edtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/adress"
+                        android:inputType="textPostalAddress"
+                        android:textSize="16sp"
+                        android:textColorHint="@color/lite_color_text"
+                        android:textColor="@color/post_text_color"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp" />
+
+                    <com.fishbuddy.customfonts.CustomEditText
+                        android:id="@+id/edit_profile_about_edtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/about"
+                        android:gravity="start"
+                        android:textSize="16sp"
+                        android:lines="5"
+                        android:textColorHint="@color/lite_color_text"
+                        android:textColor="@color/post_text_color"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"/>
+
+                    <com.fishbuddy.customfonts.CustomEditText
+                        android:id="@+id/edit_profile_uploadpic_edtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/upload_profle_pic"
+                        android:editable="false"
+                        android:focusableInTouchMode="false"
+                        android:textSize="16sp"
+                        android:textColorHint="@color/lite_color_text"
+                        android:textColor="@color/post_text_color"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp" />
+
+                    <com.fishbuddy.customfonts.CustomButton
+                        android:id="@+id/edit_profile_submt_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:textColor="@color/white"
+                        android:text="@string/submt"
+                        android:textSize="16sp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/signin_btn_bg"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:textAllCaps="false"/>
+
+                </LinearLayout>
+            </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/new_actionbar_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/newactionbar"/>
+
+    </LinearLayout>
+
+
+
+    <include
+        layout="@layout/shimming_follers_list"
+        android:visibility="visible"/>
+
+    <!--<com.fishbuddy.customfonts.CustomRegularTextView
+        android:id="@+id/nodatafound_txt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/nodatafound"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:textColor="@color/lite_color_text" />-->
+
+
+
+    <LinearLayout
+        android:id="@+id/nodatafound_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/splash_logo_new"
+            android:layout_gravity="center"/>
+        <com.fishbuddy.customfonts.CustomRegularTextView
+            android:id="@+id/nodatafound_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nodatafound"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="visible"
+            android:textColor="@color/lite_color_text" />
+
+    </LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/profile_following_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

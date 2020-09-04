@@ -1,0 +1,173 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/'}
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.12.4, 0.99.99]'
+    }
+}
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+repositories {
+    maven { url 'https://maven.google.com' }
+}
+
+
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    compileSdkVersion 28
+    // buildToolsVersion "29.0.1"
+    buildToolsVersion "28.0.3"
+    defaultConfig {
+
+        manifestPlaceholders = [
+                onesignal_app_id: 'dec89d55-234e-4445-8642-ef5abe615da4',
+                // Project number pulled from dashboard, local value is ignored.
+                onesignal_google_project_number: 'REMOTE'
+        ]
+        useLibrary 'org.apache.http.legacy'
+        applicationId "com.fishbuddy"
+        minSdkVersion 24
+        targetSdkVersion 28
+        versionCode 18
+        versionName "2.7"
+
+        multiDexEnabled true
+        aaptOptions.cruncherEnabled = false
+        aaptOptions.useNewCruncher = false
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [usesCleartextTraffic:"false"]
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.recyclerview:recyclerview-selection:1.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'org.apache.httpcomponents:httpclient-android:4.3.3'
+
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    implementation 'com.karumi:dexter:4.2.0'
+    implementation 'com.github.bumptech.glide:glide:3.8.0'
+    implementation 'me.dm7.barcodescanner:zxing:1.9'
+    implementation project(':com_facebook_android')
+    implementation 'com.facebook.android:facebook-android-sdk:4.26.0'
+    implementation files('libs/commons-lang-2.6.jar')
+
+
+    implementation 'com.android.support:multidex:1.0.1'
+
+
+   /* implementation 'com.google.android.gms:play-services:11.0.4'
+    implementation 'com.google.android.gms:play-services-maps:11.0.4'
+    implementation 'com.google.android.gms:play-services-places:11.0.4'
+    implementation 'com.google.android.gms:play-services-auth:11.0.4'
+    implementation 'com.google.firebase:firebase-analytics:11.0.4'
+    implementation 'com.google.firebase:firebase-auth:11.0.4'*/
+
+    implementation 'com.google.android.gms:play-services-plus:17.0.0'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.google.android.gms:play-services-base:17.1.0'
+    implementation 'com.google.android.gms:play-services-identity:17.0.0'
+    implementation 'com.google.android.gms:play-services-analytics:17.0.0'
+    implementation 'com.google.android.gms:play-services-awareness:17.1.0'
+    implementation 'com.google.android.gms:play-services-cast:17.1.0'
+    implementation 'com.google.android.gms:play-services-gcm:17.0.0'
+    implementation 'com.google.android.gms:play-services-drive:17.0.0'
+    implementation 'com.google.android.gms:play-services-fitness:18.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    // implementation 'com.google.android.gms:play-services-ads:18.2.0'
+    implementation 'com.google.android.gms:play-services-vision:19.0.0'
+    implementation 'com.google.android.gms:play-services-nearby:17.0.0'
+    implementation 'com.google.android.gms:play-services-panorama:17.0.0'
+    implementation 'com.google.android.gms:play-services-games:18.0.1'
+    implementation 'com.google.android.gms:play-services-safetynet:17.0.0'
+    implementation 'com.google.android.gms:play-services-wallet:18.0.0'
+    implementation 'com.google.android.gms:play-services-wearable:17.0.0'
+    implementation 'com.google.firebase:firebase-appindexing:18.0.0'
+    implementation files('libs/volley.jar')
+    //  implementation 'com.google.firebase:firebase-firestore:11.0.4'
+
+    /* implementation 'com.google.android.gms:play-services:11.0.4'
+     implementation 'com.google.android.gms:play-services-maps:17.0.0'
+     implementation 'com.google.android.gms:play-services-places:17.0.0'
+     implementation 'com.google.android.gms:play-services-auth:17.0.0'
+     implementation 'com.google.firebase:firebase-analytics:17.2.0'
+     implementation 'com.google.firebase:firebase-auth:19.0.0'
+     implementation 'com.google.firebase:firebase-firestore:21.1.1'*/
+
+
+    //implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+
+  //  implementation "com.android.support:support-emoji:28.0.0"
+
+        compile 'com.squareup.picasso:picasso:2.5.2'
+
+    implementation 'com.google.android.exoplayer:exoplayer:2.7.3'
+
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
+    implementation 'com.onesignal:OneSignal:[3.11.2, 3.99.99]'
+
+
+
+    implementation 'com.github.MikeOrtiz:TouchImageView:2.3.0'
+
+
+    compile 'com.github.McoyJiang:ListVideoManager:v1.0'
+
+
+    compile 'com.linsea:universalvideoview:1.1.0@aar'
+
+    compile 'com.henryblue.mxvideoplayer:xvideoplayer:1.2.1'
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0-alpha'
+
+
+    implementation 'com.devlomi:circularstatusview:1.0.1'
+
+
+    compile group: 'org.apache.httpcomponents' , name: 'httpclient-android' , version: '4.3.5.1'
+    compile('org.apache.httpcomponents:httpmime:4.3') {
+        exclude module: "httpclient"
+    }
+
+}
+
+apply plugin: 'com.google.gms.google-services'

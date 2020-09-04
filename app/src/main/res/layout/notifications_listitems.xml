@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notific_listitems_lay"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/yashbg">
+
+    <LinearLayout
+        android:id="@+id/notifications_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/delte_checkboxselection"/>
+
+        <com.fishbuddy.circularimageview.CircularImageView
+            android:id="@+id/landing_circular_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/post_image"/>
+
+        <LinearLayout
+            android:id="@+id/notificationdetails_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5">
+            <com.fishbuddy.customfonts.CustomRegularTextView
+                android:id="@+id/ntfc_profile_name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/johson"
+                android:visibility="visible"
+                android:textColor="@color/post_text_color"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical"/>
+
+            <com.fishbuddy.customfonts.CustomRegularTextView
+                android:id="@+id/ntfc_description_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/followingyou"
+                android:visibility="visible"
+                android:textColor="@color/form_text_color"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"/>
+
+
+
+        </LinearLayout>
+
+        <com.fishbuddy.customfonts.CustomRegularTextView
+            android:id="@+id/ntfc_date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5:30 am"
+            android:visibility="visible"
+            android:gravity="end"
+            android:textColor="@color/form_text_color"
+            android:layout_weight="0.8"
+            android:layout_marginTop="12dp"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

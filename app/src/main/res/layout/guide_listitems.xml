@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.fishbuddy.customfonts.CustomRegularTextView
+            android:id="@+id/int_count_txt"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:textColor="@color/black"
+            android:text="1"
+            android:textSize="17sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:background="@drawable/numbers_bg" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_gravity="center_horizontal|center_vertical" >
+
+            <ImageView
+                android:id="@+id/fishingtricks_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/post_image" />
+
+            <RelativeLayout
+                android:id="@+id/video_play_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:src="@drawable/play_img"
+                android:clickable="false"/>
+
+            <ImageView
+                android:id="@+id/VideoPreviewPlayButton"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                android:tint="@color/black"
+                android:background="@drawable/trans_black_bg"
+                android:clickable="false"/>
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <com.fishbuddy.customfonts.CustomBoldTextView
+        android:id="@+id/fishing_title_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.5"
+        android:gravity="start"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+        <com.fishbuddy.customfonts.ReadMoreTextView
+            android:id="@+id/fishing_tricks__txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.5"
+            android:gravity="start"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/stepone"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+
+</LinearLayout>

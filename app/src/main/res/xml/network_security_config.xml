@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+       <!-- <domain includeSubdomains="true">http://192.168.10.10</domain>-->
+        <domain includeSubdomains="true">http://demos.customerwebdemo.com</domain>
+        <domain includeSubdomains="true">http://fishbuddy.customerwebdemo.com/</domain>
+        <domain includeSubdomains="true">https://13.239.117.192/</domain>
+        <domain includeSubdomains="true">https://kidtracker.in/</domain>
+
+        <!--<domain includeSubdomains="true">Your URL(ex: 127.0.0.1)</domain>-->
+    </domain-config>
+
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+    <!--<base-config cleartextTrafficPermitted="false"/>-->
+</network-security-config>

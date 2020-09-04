@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.fishbuddy.customfonts.CustomRegularTextView
+        android:id="@+id/fishingspots_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:padding="2dp"
+        android:text="@string/app_name"
+        android:autoLink="web"
+        android:textColor="@color/bluecolor"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+</LinearLayout>

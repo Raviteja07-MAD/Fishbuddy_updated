@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yashbg">
+
+    <LinearLayout
+        android:id="@+id/new_actionbar_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/newactionbar"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.13"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/search_bg_white">
+
+
+            <EditText
+                android:id="@+id/fishbreed_search_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:textSize="14dp"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:hint="@string/place_autocomplete_search_hint"
+                android:layout_weight="0.2"
+                android:textColorHint="@color/black"
+                android:imeOptions="actionDone"/>
+
+            <ImageView
+                android:id="@+id/fishbreed_cancel_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="14dp"
+                android:clickable="false"
+                android:tint="@color/black"
+                android:visibility="visible"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/close_button"/>
+
+
+            <ImageView
+                android:id="@+id/filter_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:tint="@color/black"
+                android:visibility="visible"
+                android:layout_marginRight="3dp"
+                android:layout_margin="4dp"
+
+                android:src="@drawable/filter_icon"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/nodatafound_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="100dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/signin_logo_new"
+                android:layout_gravity="center"/>
+            <com.fishbuddy.customfonts.CustomRegularTextView
+                android:id="@+id/nodatafound_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/no_fish_spot_found"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="visible"
+                android:textColor="@color/lite_color_text" />
+
+        </LinearLayout>
+
+
+        <include
+            layout="@layout/shimmer_fishingspots"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fishingspot_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="true"
+                android:layout_marginTop="10dp">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+</LinearLayout>

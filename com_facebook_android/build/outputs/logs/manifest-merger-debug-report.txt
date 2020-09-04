@@ -1,0 +1,13 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Volumes/Macintosh HD 2/Raviteja/Fishbuddy_updated/com_facebook_android/src/main/AndroidManifest.xml:18:1-21:12
+INJECTED from /Volumes/Macintosh HD 2/Raviteja/Fishbuddy_updated/com_facebook_android/src/main/AndroidManifest.xml:18:1-21:12
+INJECTED from /Volumes/Macintosh HD 2/Raviteja/Fishbuddy_updated/com_facebook_android/src/main/AndroidManifest.xml:18:1-21:12
+	package
+		ADDED from /Volumes/Macintosh HD 2/Raviteja/Fishbuddy_updated/com_facebook_android/src/main/AndroidManifest.xml:19:7-37
+		INJECTED from /Volumes/Macintosh HD 2/Raviteja/Fishbuddy_updated/com_facebook_android/src/main/AndroidManifest.xml
+		INJECTED from /Volumes/Macintosh HD 2/Raviteja/Fishbuddy_updated/com_facebook_android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Volumes/Macintosh HD 2/Raviteja/Fishbuddy_updated/com_facebook_android/src/main/AndroidManifest.xml:18:11-69
+application
+ADDED from /Volumes/Macintosh HD 2/Raviteja/Fishbuddy_updated/com_facebook_android/src/main/AndroidManifest.xml:20:5-19

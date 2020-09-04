@@ -1,0 +1,213 @@
+<resources>
+    <string name="app_name">Fishbuddy</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="email">Email*</string>
+    <string name="password">Password*</string>
+    <string name="frgt_password">Forgot Password?</string>
+    <string name="or">Or</string>
+    <string name="signin_withfb">Sign in with Facebook</string>
+    <string name="signin_withgoogle">Sign in with Google</string>
+    <string name="name">Name*</string>
+    <string name="phone">Phone*</string>
+    <string name="cnfrm_password">Confirm Password*</string>
+
+    <string name="loadmore_fishingspots">Load More Fishing Spots</string>
+
+    <string name="searchnewfishbuddys">Search for new FishBuddy’s</string>
+    <string name="catches_onmap">Catches On Map</string>
+
+    <string name="logcatch">Log Catch</string>
+    <string name="addpost">Add Post</string>
+    <string name="edit_post">Edit Post</string>
+    <string name="map">Map</string>
+    <string name="notifications">Notifications</string>
+    <string name="profile">Profile</string>
+
+    <string-array name="drawable_names">
+        <item>@string/myprfle</item>
+      <!--  <item>@string/fishingclubs</item>-->
+        <item>@string/guide</item>
+        <item>@string/settings</item>
+        <item>@string/notfications</item>
+        <item>@string/change_password</item>
+        <item>@string/logout</item>
+    </string-array>
+
+    <string name="fishingclubs">Fishing Clubs</string>
+    <string name="myprfle">My Profile</string>
+    <string name="settings">Settings</string>
+    <string name="notfications">Notifications</string>
+    <string name="change_password">Change Password</string>
+    <string name="logout">Logout</string>
+
+    <array name="drawable_icons">
+        <item>@drawable/my_profile</item>
+        <!--<item>@drawable/fish_clubs</item>-->
+        <item>@drawable/compass</item>
+        <item>@drawable/settings</item>
+        <item>@drawable/notifications_menu</item>
+        <item>@drawable/settings</item>
+        <item>@drawable/logout</item>
+    </array>
+
+    <string name="fishingspots">Fishing Spots</string>
+    <string name="fishbreads">Fish Breeds</string>
+    <string name="guide">Guide</string>
+    <string name="popular">Popular</string>
+    <string name="tackle">Tackle</string>
+    <string name="fishbuddy">FishBuddy</string>
+    <string name="johson">Thomas Johnson</string>
+    <string name="prfle_desc">Saturday at 3:45 PM</string>
+    <string name="loremlipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="comments">Comments</string>
+    <string name="shares">0 Shares</string>
+
+    <string name="edit_icon">Edit</string>
+    <string name="delete_icon">Delete</string>
+    <string name="block_user">Block User</string>
+    <string name="hide_post">Hide Post</string>
+
+    <string name="like">Like</string>
+    <string name="comment">Comment</string>
+    <string name="share">Share</string>
+    <string name="lakename">Loch Morar Freshwater Lake</string>
+    <string name="lochbar">Lochaber,Highland</string>
+    <string name="lakedetails">It is the fifth-largest loch by surface area in Scotland, at 26.7 km2 (10.3 sq mi), and the deepest freshwater body in the British Isles with a maximum depth of 310 m (1,017 ft). The loch was created by glacial action around 10,000 years ago, and has a surface elevation of 9 metres (30 ft) above sea level. It separates the traditional district of North Morar (which contains the village of Morar), from Arisaig and Moidart.The loch was created by glacial action around 10,000 years ago, and has a surface elevation of 9 metres (30 ft) above sea level. It separates the traditional district of North Morar (which contains the village of Morar), from Arisaig and Moidart. </string>
+    <string name="totalarea"> 26.7 km2</string>
+    <string name="area">Area : </string>
+    <string name="maxdepth">Max.depth : </string>
+    <string name="maxdepthft"> 310m(1,017ft)</string>
+    <string name="directions">Directions</string>
+    <string name="maxlength">Max.length</string>
+    <string name="maxlengthkm">18.8 km (11.7 mi)</string>
+    <string name="surface">Surface area</string>
+    <string name="surfacekm">26.7 km2 (10.3 sq mi)</string>
+    <string name="averagedepth">Average depth</string>
+    <string name="avegedpthmtrs">87 metres (284 ft)</string>
+    <string name="watervl">Water volume</string>
+    <string name="watervlunits">2.3073 cubic kilometres</string>
+    <string name="surfaceelvtn">Surface elevation</string>
+    <string name="surfaceelvtnunits">9 metres (30 ft)</string>
+    <string name="locatethelake">Locate the Lake</string>
+    <string name="largemouthbass">Largemouth bass</string>
+    <string name="largemouthbasskg">Largemouth bass 3.4 kg</string>
+    <string name="manchestar">Manchester, Lochaber, Luton, London</string>
+
+    <string name="view_more">View More</string>
+
+
+    <string name="fishbreed_moredetails">The largemouth bass is an olive-green to greenish gray fish, marked by a series of dark, sometimes black, blotches forming a jagged horizontal stripe along each flank.The upper jaw (maxilla) of a largemouth bass extends beyond the rear margin of the orbit. In comparison to age, a female bass is larger than a male. The largemouth is the largest of the black basses, reaching a maximum recorded overall length of 29.5 in (75 cm) and a maximum unofficial weight of 25 pounds 1 ounce (11.4 kg).The fish lives 10 to 16 years on average.</string>
+    <string name="fivesteps">Here are the top 5 fishing tricks and tips to catch fish, no matter what skill level you are at:</string>
+    <string name="stepone">Basic knowledge – know what kind of fish you want to catch, and learn about their habits and habitat. Time of day is important; some fish will bite best in the morning, while others are hungrier in the afternoon. Some like cold water and others stick to the warmer shallows. Be sure to check the weather report before you head out on the waterways.</string>
+    <string name="steptwo">Proper equipment – for simple fishing off a dock, rowboat or shoreline, you need a basic fishing set that includes a rod, reel, line and hooks. Tackle boxes are ideal for carrying and sorting small equipment like sharp hooks, lures, extra line and a knife. Fill your tackle box with a flashlight, adjustable wrench, pliers, first aid supplies, spare hooks and rod tips, glue stick and a lighter.</string>
+    <string name="stepthree">Bait – even fish have different preferences when it comes to food. Use bait that your target fish enjoy. Cover the hook with the worm or other bait, so the fish gets set on a good hook when they chomp down on the tempting bait. Some artificial and electronic baits appeal to certain types of fish but not others. Don’t go looking for perch with bait designed to attract salmon. Shiny reflective lures can sun blind certain fish; use matted metal lures instead</string>
+    <string name="stepfour">Get maps and local reports – check at the nearest bait shops for local topographical maps and fishing activity reports before you head out for the day fishing. Maps that show the contour bottom of lakes and rivers help you find the drop-offs and other locations that certain fish prefer, like deep holes or mossy areas near the shoreline. Other fishermen can advise you (if they will) about where the fish are biting that day.</string>
+    <string name="stepfive">Peace and patience – keep noise to a minimum, but bring along something to help you pass time; be patient. Keep a close watch for any fishing line movement; a quick hard tug is a chance to hook a fish if you are ready.</string>
+    <string name="write_comment">Write a comment...</string>
+    <string name="followingyou">Start following you</string>
+    <string name="photo_video">Browse Photo/Video</string>
+    <string name="addurl">Add URL</string>
+    <string name="writecomment">Write Comment</string>
+    <string name="tagfishingspot">Tag Near Fishing Spot</string>
+    <string name="post">Post</string>
+    <string name="followers">Followers</string>
+    <string name="my_posts">My Posts</string>
+    <string name="see_all_posts">See All</string>
+    <string name="see_all_followers">See All Followers</string>
+    <string name="following">Following</string>
+    <string name="see_all_">See All</string>
+    <string name="edit_prfle">Edit Profile</string>
+    <string name="catches">Catches</string>
+    <string name="catches_map">Catches Map</string>
+    <string name="angel">Angel H.</string>
+    <string name="frst_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="adress">Address</string>
+    <string name="about">About</string>
+    <string name="upload_profle_pic">Upload Profile Picture</string>
+    <string name="submt">Submit</string>
+    <string name="phnnumber">Phone Number</string>
+    <string name="save_cntnue">Save &amp; Continue </string>
+    <string name="enterpassword">Please enter password</string>
+    <string name="cnfrmpassword">Please confirm password</string>
+    <string name="entermobile">Please enter mobile number</string>
+    <string name="entername">Please enter name</string>
+    <string name="enteremail">Please enter email</string>
+    <string name="checkinternet">Please check internet connection..</string>
+    <string name="follow">Follow</string>
+    <string name="unfollow">UnFollow</string>
+    <string name="fishingtips">Fishing Tips and Tricks</string>
+    <string name="set_passwrd">Set Password</string>
+    <string name="passwrd">Password</string>
+    <string name="cnfrm_passwrd">Confirm Password</string>
+    <string name="old_password_text">Old Password</string>
+    <string name="newpassword_text">New Password</string>
+    <string name="confirmpassword_text">Confirm Password</string>
+    <string name="oldpassword">Please enter password</string>
+    <string name="newpassword">Please enter new password</string>
+    <string name="cnfrmpassword_again">Please enter password again</string>
+    <string name="errorpasswrd">passwords not matched</string>
+
+    <string name="weight">Weight:</string>
+    <string name="size">Size:</string>
+    <string name="latitude">Latitude:</string>
+    <string name="longitude">Longitude:</string>
+    <string name="capture">Capture the entire Fish.</string><!-- inside the box-->
+
+    <string name="enterfirstname">Please enter first name</string>
+    <string name="enterlastname">Please enter last name</string>
+    <string name="enterphonenumber">Please enter phone number</string>
+    <string name="enteradress">Please enter address</string>
+    <string name="enterabout">Please enter about details</string>
+    <string name="nodatafound">No data found</string>
+
+    <string name="no_posts_found">No Posts found</string>
+
+    <string name="no_fish_found">No Fish Breeds Found</string>
+
+    <string name="no_fish_spot_found">No Fishing Spots Found</string>
+    <string name="no_fish_clubs_found">No Fishing Clubs Found</string>
+    <string name="no_fish_tackle_found">No Tackle Found</string>
+
+    <string name="selectphoto_video">Please select photo/video </string>
+    <string name="enterurl">Please enter url</string>
+    <string name="pleasewritecomment">Please write comment</string>
+
+
+    <string name="please_entervalidemail">Please enter valid email</string>
+
+    <string name="noresultsfound">No Results found</string>
+    <string name="testgmail">Test@gmail.com</string>
+
+    <string name="additiondetails">Additional Details</string>
+
+
+    <string name="habitat">Habitat</string>
+    <string name="weight_breed">Weight(lbs)</string>
+    <string name="length">Length(inches)</string>
+    <string name="water">Water</string>
+
+    <string name="website">Website</string>
+    <string name="email_spots">Email</string>
+    <string name="phone_spots">phone</string>
+    <string name="address_spots">Address</string>
+
+    <string name="season">Season</string>
+    <string name="season_months">October-March</string>
+    <string name="baglimit">Bag Limit</string>
+    <string name="minsize">weight</string>
+    <string name="maxsize">Length</string>
+    <string name="trophy">Trophy</string>
+    <string name="measure">Measure</string>
+    <string name="record">Record</string>
+
+
+    <string name="notifications_settings">Notifications Settings</string>
+
+
+    <string name="read_more">show more</string>
+    <string name="read_less">show less</string>
+</resources>
+
+

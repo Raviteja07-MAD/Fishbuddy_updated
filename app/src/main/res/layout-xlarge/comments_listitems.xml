@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comments_listitems_lay"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <com.fishbuddy.circularimageview.CircularImageView
+            android:id="@+id/landing_circular_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/post_image"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:background="@drawable/comments_lay_bg">
+
+            <com.fishbuddy.customfonts.CustomBoldTextView
+                android:id="@+id/profile_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/johson"
+                android:visibility="visible"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"
+                android:textSize="14dp" />
+
+            <com.fishbuddy.customfonts.CustomRegularTextView
+                android:id="@+id/profile_updatedtime_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fivesteps"
+                android:visibility="visible"
+                android:textColor="@color/lite_color_text"
+                android:layout_centerInParent="true"
+                android:textSize="12dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

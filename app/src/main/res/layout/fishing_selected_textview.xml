@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/images_lay_bg">
+            <com.fishbuddy.customfonts.CustomRegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/splash_logo_new_old"
+                android:id="@+id/uploaded_images_view"
+                android:text="adas"
+                android:textSize="14sp"
+                android:padding="10dp"
+
+                />
+
+        </LinearLayout>
+        <com.fishbuddy.customfonts.FeedImageView
+            android:id="@+id/delimages_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:padding="@dimen/padding_10"
+            android:tint="@color/black"
+            android:layout_gravity="right"
+            android:background="@drawable/close"
+            android:src="@drawable/close"/>
+
+
+
+
+    </FrameLayout>
+
+
+
+
+
+
+</LinearLayout>

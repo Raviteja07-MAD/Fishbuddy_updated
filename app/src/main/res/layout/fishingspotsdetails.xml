@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/landing_listitems_lay"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/new_actionbar_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/newactionbar"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/lake_image"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/splash_logo_new"
+                android:scaleType="fitXY"
+                android:layout_marginBottom="5dp"/>
+
+            <com.fishbuddy.customfonts.CustomRegularTextView
+                android:id="@+id/lakedetails_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lakedetails"
+                android:visibility="visible"
+                android:gravity="start"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/lite_color_text"
+                android:textSize="16sp" />
+
+
+
+            <LinearLayout
+                android:id="@+id/website_txt_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:background="@drawable/fishbreeds_btn_bg"
+                android:layout_marginBottom="5dp"
+               android:padding="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/web_icon"
+                    android:clickable="false"
+                    android:tint="@color/white"/>
+
+                <com.fishbuddy.customfonts.CustomRegularTextView
+                    android:id="@+id/website_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:clickable="false"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/email_txt_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:background="@drawable/fishbreeds_btn_bg"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+               >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/email_icon"
+                    android:clickable="false"
+                    android:tint="@color/white"/>
+
+                <com.fishbuddy.customfonts.CustomRegularTextView
+                    android:id="@+id/email_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/phone_txt_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:background="@drawable/fishbreeds_btn_bg"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+               >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/call_icon"
+                    android:clickable="false"
+                    android:tint="@color/white"/>
+
+                <com.fishbuddy.customfonts.CustomRegularTextView
+                    android:id="@+id/phone_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/address_value_text_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:background="@drawable/fishbreeds_btn_bg"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:src="@drawable/locate_the_lake_icon"
+                    android:tint="@color/white"/>
+
+                <com.fishbuddy.customfonts.CustomRegularTextView
+                    android:id="@+id/address_value_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/fishbreeds_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           >
+            <com.fishbuddy.customfonts.CustomBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fish Breeds"
+                android:visibility="visible"
+                android:gravity="start"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/lite_color_text"
+                android:textSize="16sp" />
+
+
+            <com.fishbuddy.customfonts.CustomRegularTextView
+                android:id="@+id/fishing_methods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textColor="@color/lite_color_text"
+                android:text="No Fish Breeds Found"
+                android:textSize="16sp"
+                android:layout_marginTop="6dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/multiple_fishbreeds_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="@dimen/padding_10">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:id="@+id/locate_lake_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:background="@drawable/signin_btn_bg"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/locate_the_lake_icon"/>
+
+                <com.fishbuddy.customfonts.CustomRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:text="@string/locatethelake"
+                    android:layout_marginRight="10dp"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <com.fishbuddy.customfonts.CustomBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="photos"
+                android:visibility="visible"
+                android:gravity="start"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/lite_color_text"
+                android:textSize="16sp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/multiple_images_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="@dimen/padding_10">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+            <LinearLayout
+                android:id="@+id/fishingspot_recyclerview_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="30dp"
+                android:background="@color/yashbg">
+            <com.fishbuddy.customfonts.CustomBoldTextView
+                android:id="@+id/fishingspots_title_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Near Fishing Clubs"
+                android:visibility="visible"
+                android:gravity="start"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/lite_color_text"
+                android:textSize="16sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fishingspot_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="400dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="@dimen/padding_10">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+                <com.fishbuddy.customfonts.CustomRegularTextView
+                    android:id="@+id/no_fishing_clubs_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textColor="@color/lite_color_text"
+                    android:text="No Fishing Clubs Found"
+                    android:textSize="16sp"
+                    android:layout_marginTop="6dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="60dp"
+                    android:src="@drawable/signin_logo_new" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="40dp"
+                    android:gravity="center">
+
+                    <com.fishbuddy.customfonts.CustomRegularTextView
+                        android:id="@+id/sign_in_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="76dp"
+                        android:textColor="@color/white"
+                        android:text="@string/sign_in"
+                        android:textSize="32sp"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/signin_btn_xlarge_bg"
+                        android:layout_marginRight="20dp"/>
+
+                    <com.fishbuddy.customfonts.CustomRegularTextView
+                        android:id="@+id/sign_up_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="76dp"
+                        android:textColor="@color/form_text_color"
+                        android:text="@string/sign_up"
+                        android:textSize="32sp"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/signin_white_btn_bg"
+                        android:layout_marginLeft="20dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/sign_in_layout">
+
+                    <com.fishbuddy.customfonts.CustomEditText
+                        android:id="@+id/sign_in_email_edtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:textSize="32sp"
+                        android:paddingLeft="16dp"
+                        android:textColorHint="@color/lite_color_text"
+                        android:textColor="@color/post_text_color"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp" />
+
+                    <com.fishbuddy.customfonts.CustomEditText
+                        android:id="@+id/sign_in_passwrd_edtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:textSize="32sp"
+                        android:paddingLeft="16dp"
+                        android:textColorHint="@color/lite_color_text"
+                        android:textColor="@color/post_text_color"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp" />
+
+                    <com.fishbuddy.customfonts.CustomButton
+                        android:id="@+id/sign_in_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="84dp"
+                        android:textColor="@color/white"
+                        android:text="@string/sign_in"
+                        android:textSize="32sp"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginBottom="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/signin_btn_xlarge_bg"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="30dp"/>
+
+                    <com.fishbuddy.customfonts.CustomRegularTextView
+                        android:id="@+id/frgt_password_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/orange"
+                        android:text="@string/frgt_password"
+                        android:textSize="32sp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="30dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="32sp"
+                        android:layout_marginBottom="40dp"
+                        android:gravity="center">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/form_text_color"
+                            android:layout_weight="0.5"
+                            android:layout_marginRight="10dp"/>
+
+                        <com.fishbuddy.customfonts.CustomRegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/lite_color_text"
+                            android:text="@string/or"
+                            android:textSize="32sp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/form_text_color"
+                            android:layout_weight="0.5"
+                            android:layout_marginLeft="10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="84dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/signin_withfb_btn_xlarge_bg"
+                        android:layout_marginBottom="20dp"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp">
+                        <ImageView
+                            android:layout_width="46dp"
+                            android:layout_height="46dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/facebook"/>
+
+                        <com.fishbuddy.customfonts.CustomBoldTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/white"
+                            android:text="@string/signin_withfb"
+                            android:textSize="32sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="84dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/signin_withgoogle_btn_xlarge_bg"
+                        android:layout_marginTop="30dp"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="30dp">
+                        <ImageView
+                            android:layout_width="46dp"
+                            android:layout_height="46dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/google"/>
+
+                        <com.fishbuddy.customfonts.CustomBoldTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/white"
+                            android:text="@string/signin_withgoogle"
+                            android:textSize="32sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/signup_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:visibility="gone">
+
+
+                    <com.fishbuddy.customfonts.CustomEditText
+                        android:id="@+id/sign_up_name_edtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/name"
+                        android:inputType="text"
+                        android:textSize="32sp"
+                        android:textColorHint="@color/lite_color_text"
+                        android:textColor="@color/post_text_color"
+                        android:paddingBottom="30dp"
+                        android:paddingLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp" />
+
+                    <com.fishbuddy.customfonts.CustomEditText
+                        android:id="@+id/sign_up_phone_edtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/phone"
+                        android:inputType="number"
+                        android:textSize="32sp"
+                        android:textColorHint="@color/lite_color_text"
+                        android:textColor="@color/post_text_color"
+                        android:paddingBottom="30dp"
+                        android:paddingLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp" />
+
+                    <com.fishbuddy.customfonts.CustomEditText
+                        android:id="@+id/sign_up_email_edtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:textSize="32sp"
+                        android:textColorHint="@color/lite_color_text"
+                        android:textColor="@color/post_text_color"
+                        android:paddingBottom="30dp"
+                        android:paddingLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp" />
+
+                    <com.fishbuddy.customfonts.CustomEditText
+                        android:id="@+id/sign_up_password_edtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:textSize="32sp"
+                        android:textColorHint="@color/lite_color_text"
+                        android:textColor="@color/post_text_color"
+                        android:paddingBottom="30dp"
+                        android:paddingLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp" />
+
+                    <com.fishbuddy.customfonts.CustomEditText
+                        android:id="@+id/sign_up_cnfrmpsswrd_edtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/cnfrm_password"
+                        android:inputType="textPassword"
+                        android:textSize="32sp"
+                        android:textColorHint="@color/lite_color_text"
+                        android:textColor="@color/post_text_color"
+                        android:paddingBottom="30dp"
+                        android:paddingLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp" />
+
+                    <com.fishbuddy.customfonts.CustomButton
+                        android:id="@+id/sign_up_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="84dp"
+                        android:textColor="@color/white"
+                        android:text="@string/sign_up"
+                        android:textSize="32sp"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/signin_btn_bg"
+                        android:layout_marginRight="30dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

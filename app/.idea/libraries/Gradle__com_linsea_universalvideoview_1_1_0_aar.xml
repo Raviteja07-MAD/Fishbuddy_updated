@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.linsea:universalvideoview:1.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/004e1e6978b69cbd5aa808758355af3f/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/004e1e6978b69cbd5aa808758355af3f/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.linsea/universalvideoview/1.1.0/b141292b9f377bcb1816ccc08148a162590c76f1/universalvideoview-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

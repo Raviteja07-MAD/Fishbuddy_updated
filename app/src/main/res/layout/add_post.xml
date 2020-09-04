@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/new_actionbar_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/newactionbar"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/sign_in_layout">
+
+                    <com.fishbuddy.customfonts.CustomEditText
+                        android:id="@+id/addpost_photo_video_edtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/photo_video"
+                        android:editable="false"
+                        android:focusableInTouchMode="false"
+                        android:textSize="16sp"
+                        android:textColor="@color/post_text_color"
+                        android:textColorHint="@color/lite_color_text"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:drawableRight="@drawable/upload"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:id="@+id/uploaded_images_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                    <com.fishbuddy.customfonts.CustomEditText
+                        android:id="@+id/addpost_url_edtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/addurl"
+                        android:inputType="text"
+                        android:textSize="16sp"
+                        android:textColor="@color/post_text_color"
+                        android:textColorHint="@color/lite_color_text"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp" />
+
+                    <com.fishbuddy.customfonts.CustomEditText
+                        android:id="@+id/addpost_comment_edtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/writecomment"
+                        android:gravity="start"
+                        android:textSize="16sp"
+                        android:lines="8"
+                        android:textColor="@color/post_text_color"
+                        android:textColorHint="@color/lite_color_text"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"/>
+
+
+
+
+                    <com.fishbuddy.customfonts.CustomEditText
+                        android:id="@+id/tag_fishignspots"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/tagfishingspot"
+                        android:editable="false"
+                        android:focusableInTouchMode="false"
+                        android:textSize="16sp"
+                        android:textColor="@color/post_text_color"
+                        android:textColorHint="@color/lite_color_text"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:drawableRight="@drawable/upload"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"/>
+
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:id="@+id/selective_fishignspots_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+
+
+                    <com.fishbuddy.customfonts.CustomButton
+                        android:id="@+id/post_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textColor="@color/white"
+                        android:text="@string/post"
+                        android:textSize="16sp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/signin_btn_bg"
+                        android:textAllCaps="false"/>
+
+                    <VideoView
+                        android:id="@+id/videoView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

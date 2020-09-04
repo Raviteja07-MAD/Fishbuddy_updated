@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/header_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_10">
+
+
+
+        <FrameLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/orange_round_bg"
+            android:layout_marginTop="5dp">
+
+            <com.fishbuddy.circularimageview.CircularImageView
+                android:id="@+id/profile_circular_img"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:src="@drawable/post_image"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.3"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical">
+
+            <com.fishbuddy.customfonts.CustomRegularTextView
+                android:id="@+id/profile_name_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/johson"
+                android:visibility="visible"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_weight="0.3"
+                android:layout_gravity="center_vertical"/>
+
+            <com.fishbuddy.customfonts.CustomRegularTextView
+                android:id="@+id/share_date_time_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_weight="0.3"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+            <LinearLayout
+            android:id="@+id/cancel_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.85"
+            android:layout_gravity="center"
+            android:gravity="right|center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/canclimg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="13dp"
+                android:clickable="false"
+                android:src="@drawable/close_button"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_10">
+        <com.fishbuddy.customfonts.CustomEditText
+            android:id="@+id/commnt_edittxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Say something about this.."
+            android:textSize="15sp"
+            android:lines="3"
+            android:gravity="top"
+            android:paddingBottom="@dimen/padding_10"
+            android:layout_margin="@dimen/padding_10"
+            android:background="@color/white" />
+
+        <com.fishbuddy.customfonts.CustomRegularTextView
+            android:id="@+id/sharenow_text"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:textColor="@color/white"
+            android:text="Share now"
+            android:textSize="16sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="end"
+            android:background="@drawable/signin_btn_bg"
+            android:layout_marginRight="10dp"
+            />
+
+    </LinearLayout>
+
+
+    <!--  <LinearLayout
+          android:id="@+id/edit_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="10dp"
+          android:orientation="horizontal">
+
+          <ImageView
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:padding="4dp"
+              android:layout_gravity="center"
+              android:src="@drawable/edit_icon"
+              android:tint="@color/background"
+              android:clickable="false"/>
+
+          <com.fishbuddy.customfonts.CustomRegularTextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:layout_marginLeft="15dp"
+              android:text="@string/edit_icon"
+              android:tint="@color/background"
+              android:textSize="16dp"
+              android:clickable="false"/>
+
+      </LinearLayout>
+
+
+      <LinearLayout
+          android:id="@+id/delet_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="10dp"
+          android:orientation="horizontal">
+
+          <ImageView
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:layout_gravity="center"
+              android:src="@drawable/delete_icon"
+              android:padding="4dp"
+              android:clickable="false"/>
+
+          <com.fishbuddy.customfonts.CustomRegularTextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:layout_marginLeft="15dp"
+              android:text="@string/delete_icon"
+              android:textColor="@color/lite_color_text"
+              android:textSize="16dp"
+              android:clickable="false"/>
+
+      </LinearLayout>
+
+
+      <LinearLayout
+          android:id="@+id/blockuser_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="10dp"
+          android:orientation="horizontal">
+
+          <ImageView
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:layout_gravity="center"
+              android:src="@drawable/block_user"
+              android:padding="4dp"
+              android:clickable="false"/>
+
+          <com.fishbuddy.customfonts.CustomRegularTextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:layout_marginLeft="15dp"
+              android:text="@string/block_user"
+              android:textColor="@color/lite_color_text"
+              android:textSize="16dp"
+              android:clickable="false"/>
+
+      </LinearLayout>
+
+  -->
+
+
+</LinearLayout>

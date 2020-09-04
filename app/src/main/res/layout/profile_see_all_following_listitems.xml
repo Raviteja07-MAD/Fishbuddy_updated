@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profile_listitems_lay"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <FrameLayout
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/orange_round_bg"
+            android:layout_marginTop="5dp">
+
+            <com.fishbuddy.circularimageview.CircularImageView
+                android:id="@+id/profile_circular_img"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:src="@drawable/post_image"/>
+
+        </FrameLayout>
+
+        <com.fishbuddy.customfonts.CustomRegularTextView
+            android:id="@+id/profile_name_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/johson"
+            android:visibility="visible"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_weight="0.3"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"/>
+
+
+
+        <com.fishbuddy.customfonts.CustomButton
+            android:id="@+id/follow_btn"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:textColor="@color/white"
+            android:text="@string/follow"
+            android:textSize="12sp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/signin_btn_bg"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
